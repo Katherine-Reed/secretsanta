@@ -18,14 +18,16 @@ export default function SecretSantaForm({ onSubmit }) {
 
   return (
     <form onSubmit={handleSubmit}>
+      <label htmlFor="name">Enter a name</label><br/>
       <input
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        placeholder="Enter a name"
+        placeholder="Rudy Rednose"
+        id="name"
       />
-      <button type="button" onClick={handleAddName}>Add Name</button>
-      <button type="submit">Draw Names</button>
+      <button type="button" className="btn-add" onClick={handleAddName}>Add Name</button>
+      <button type="submit" className="btn-draw">Draw Names</button>
       <ul>
         {names.map((name, index) => (
           <li key={index}>{name}</li>

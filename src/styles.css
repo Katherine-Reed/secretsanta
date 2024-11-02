@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: darkred;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playwrite GB S', Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 480px;
+}
+small{
+    font-size: large;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 50%;
+}
+label{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+input, button{
+    border: 4px solid green;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: bold;
+    padding: 8px;
+    text-indent: 4px;
+}
+.btn-add,.btn-draw{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    color: whitesmoke;
+    margin-top: 16px;
+    text-shadow:
+        1px 1px 1px black,
+        -1px -1px 1px black,
+        1px -1px 1px black,
+        -1px 1px 1px black;
+}
+.btn-add:hover,.btn-draw:hover{
+    border: 4px solid darkred;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.5);
+}
+.btn-add{
+    background-color: green;
+}
+.btn-draw{
+    border: 4px solid goldenrod;
+    background-color: goldenrod;
+}
+ul{
+    font-size: 1.75rem;
+    list-style: none;
+    padding-left: 0;
+}
+li {
+    padding-top: 4px;
+}

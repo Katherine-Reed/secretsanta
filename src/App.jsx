@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Secret Santa</h1>
+      <h1><small>Kat's</small><br/>Secret Santa<br/><small>Generator</small></h1>
       <SecretSantaForm onSubmit={handleNamesSubmit} />
       {pairs.length > 0 && <SecretSantaDraw pairs={pairs} />}
     </div>
